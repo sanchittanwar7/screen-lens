@@ -1,3 +1,0 @@
-[console_scripts]
-screen-lens = screen_lens_wrapper:run_shell_script
-
