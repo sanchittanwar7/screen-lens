@@ -1,18 +1,18 @@
-### Install package
-## macOS
+## Install package
+### macOS
 ```
 pip install screen-lens
 ```
 
-## Ubuntu
+### Ubuntu
 ```
 pipx install screen-lens
 ```
 
-### Run package
+## Run package
 ```
 $ screen-lens
 ```
 
-### Report a bug or raise a feature request
+## Report a bug or raise a feature request
 ✉️ `connectwithme@sanchittanwar7.in`
