@@ -12,11 +12,11 @@ take_screenshot() {
     elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
         # Linux - using scrot or gnome-screenshot
         if command -v scrot &>/dev/null; then
-            scrot 'screenshot.png'
+            scrot -s 'screenshot.png'
         elif command -v gnome-screenshot &>/dev/null; then
-            gnome-screenshot -f 'screenshot.png'
+            gnome-screenshot -a -f 'screenshot.png'
         elif command -v import &>/dev/null; then
-            import -window root 'screenshot.png'
+            import root 'screenshot.png'
         else
             echo "No screenshot tool found. Please install scrot, gnome-screenshot, or ImageMagick."
             exit 1
