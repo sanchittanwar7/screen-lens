@@ -3,7 +3,7 @@ import os
 
 setup(
     name='screen-lens',
-    version='0.1.3',
+    version='0.1.4',
     packages=find_packages(),
     py_modules=['screen_lens_wrapper'],
     entry_points={
@@ -13,6 +13,11 @@ setup(
     },
     include_package_data=True,
     package_data={'screen_lens': ['bin/screen_lens.sh']},
+    install_requires=[
+        'requests',
+        'urllib3'
+    ],
+    python_requires='>=3.7',
     description='Perform Google Lens search by taking a simple screenshot from anywhere in your system.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

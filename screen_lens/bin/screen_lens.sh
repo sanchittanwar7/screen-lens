@@ -29,6 +29,18 @@ take_screenshot() {
     echo
 }
 
+# Check if curl is installed
+if ! command -v curl &>/dev/null; then
+    echo "curl is not installed. Please install it using your package manager."
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &>/dev/null; then
+    echo "jq is not installed. Please install it using your package manager."
+    exit 1
+fi
+
 take_screenshot
 
 echo "🏭 Processing image"

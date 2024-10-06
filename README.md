@@ -9,6 +9,27 @@ pip install screen-lens
 pipx install screen-lens
 ```
 
+## Prerequisites
+### macOS
+Install `curl` from homebrew
+```
+brew install curl
+```
+Install `jq` from homebrew
+```
+brew install jq
+```
+
+### Ubuntu
+Install `curl`
+```
+apt install curl
+```
+Install `jq`
+```
+apt install jq
+```
+
 ## Run package
 ```
 $ screen-lens
